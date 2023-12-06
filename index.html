@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Yimage.svg" type="image/x-icon">
+    <!-- This is Icon Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- This is Font Family Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Libre+Baskerville&family=Nanum+Myeongjo:wght@700&family=Noto+Serif+Display:wght@600&family=Noto+Serif:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Yandex Clone</title>
+    <style>
+        /* CSS For Document */
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Navbar CSS */
+        .navbar{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 10px 30px;
+        }
+        .navbar .logo img{
+            height: 45px;
+            width: 45px;
+            transition: all 0.5s;
+        }
+        .logo img:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+        .login_icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+        }
+        .login_icon a{
+            text-decoration: none;
+            background-color: #ECF0F1 ;
+            padding: 8px 15px;
+            border-radius: 10px;
+            color: black;
+        }
+        .login_icon a:hover{
+            background-color: lightgray;
+        }
+        .login_icon svg{
+            height: 45px;
+            width: 40px;
+            cursor: pointer;
+        }
+        .login_icon  svg:hover{
+            opacity: 0.5;
+        }
+
+        /* Images Body CSS */
+        .body{
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            width: 70%;
+            justify-content: center;
+            margin: 0px auto;
+            margin-top: 50px;
+            align-items: center;
+            text-align: center;
+        }
+        .clone{
+            margin: 0  35px;
+        }
+        .clone img{
+            height: 50px;
+            width: 50px;
+            transition: all 0.5s;
+        }
+        .clone img:hover{
+            transform: scale(1.2);
+        }
+        .clone p:hover{
+            opacity: 0.5;
+        }
+        .inputfield{
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+         #input{
+            width: 55%;
+            padding: 18px 15px;
+            padding-right: 50px;
+            border: 2px solid #FFBF00;
+            border-radius: 15px;
+            font-size: 16px;
+            margin-top: 20px;
+         }   
+         #input:focus{
+           border: 2px solid #FFBF00;
+           outline: none;
+         }
+         .end{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: left;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: 10px;
+            width: 52%;
+            color: black;
+            position: relative;
+        }
+        .end:hover{
+            color: gray;
+            cursor: pointer;
+        }
+        .city{
+            position: absolute;
+            text-align: center;
+            justify-content: right;
+            align-items:flex-end;
+            margin: 0 auto;
+            padding: 5px;
+            left: 87%;
+            color: gray;
+        }
+        .city:hover{
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="Yimage.svg" alt="Yandex">
+            </div>
+            <div class="login_icon">
+                <a href="#">Log in</a>
+                <!-- App Icon SVG -->
+                    <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 12.167c0-.645.56-1.167 1.25-1.167h22.5c.69 0 1.25.522 1.25 1.167 0 .644-.56 1.166-1.25 1.166H8.75c-.69 0-1.25-.522-1.25-1.166ZM7.5 20c0-.644.56-1.167 1.25-1.167h22.5c.69 0 1.25.523 1.25 1.167s-.56 1.167-1.25 1.167H8.75c-.69 0-1.25-.523-1.25-1.167Zm1.25 6.667c-.69 0-1.25.522-1.25 1.166 0 .645.56 1.167 1.25 1.167h22.5c.69 0 1.25-.522 1.25-1.167 0-.644-.56-1.166-1.25-1.166H8.75Z"></path></svg>
+            </div>
+    </header>
+    
+    <main class="body">
+        <!-- Games Image -->
+        <span class="games clone">
+            <img src="games.png" alt="Yandex"> <p>Games</p>
+        </span>
+
+        <!-- Images Image -->
+        <span class="images clone">
+            <img src="images1.png" alt="Yandex"> <p>Images</p>
+        </span>
+
+        <!-- Video Image -->
+        <span class="videos clone">
+            <img src="videoimage.png" alt="Yandex"> <p>Video</p>
+        </span>
+        
+        <!-- Weather Image -->
+        <span class="weather clone">
+            <img src="weather.png" alt="Yandex"> <p>Weather</p>
+        </span>
+
+        <!-- Map Image -->
+        <span class="map clone">
+            <img src="map.png" alt="Yandex"> <p>Maps</p>
+        </span>
+
+        <!-- Email Image -->
+        <span class="mail clone">
+            <img src="email.png" alt="Yandex"> <p>Mail</p>
+        </span>    
+    </main>
+
+    <!-- Input Field -->
+    <div class="inputfield">
+            <input type="text" name="input" id="input" placeholder="Finds Everything">
+    </div>
+   
+    <!-- Cloud Image -->
+    <div class="end">
+        <img src="clouds.svg" alt="Yandex">29 <sup>o</sup><span class="city">Hyderabad</span></span>
+        
+    </div>
+</body>
+</html>
